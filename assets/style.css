@@ -11,11 +11,11 @@ body{
 }
 
 .card__wrapper{
-width: 751px;
-height: 660px;
-border: 1px solid grey;
-display:flex;
-position: relative;
+    width: 751px;
+    height: 600px;
+    border: 1px solid grey;
+    display:flex;
+    position: relative;
 }
 
 .card__back, .card__front{
@@ -67,7 +67,6 @@ position: relative;
 #card__back-cvv_inp{
     width: 60%;
     height: 53px;
-    height: 50px;
     font-size: 2.5em;
     padding: 4px;
 }
@@ -103,12 +102,16 @@ position: relative;
 #card__number_inp, #card__month_inp, #card__year_inp{
     background: #f1f1f1;
     font-size: 2.5em;
-    padding: 4px;
+    padding: 2px;
     border: none;
     outline: none;
     height: 53px;
+    
 }
 
+#card__month_inp, #card__year_inp{
+   width: 100%;
+}
 .card__group{
     height: 39%;
     display:flex;
@@ -122,9 +125,18 @@ position: relative;
 }
 
 
-@media (max-width: 751px) {
+@media (max-width: 718px) {
     .card__back{
-       left: 0;
+        left:0;
+    }
+
+    .card__front, .card__back{
+        width:100%;
+        height: 300px;
+    }
+
+    #card__number_inp, #card__month_inp, #card__year_inp, #card__back-cvv_inp{
+        height: 45px;
     }
 }
 

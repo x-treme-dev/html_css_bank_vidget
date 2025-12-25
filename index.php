@@ -9,7 +9,7 @@
 </head>
  <body>
      <div class="container">
-
+      <!------------------Banking card---begin---------------------->
          <div class="card__wrapper">
                   <div class="card__front">
                         <div class="card__front-top">
@@ -47,7 +47,7 @@
                         </div>
                     </div> 
         </div> 
-             
+            <!------------------Banking card---end---------------------->  
           
     </div>
  
