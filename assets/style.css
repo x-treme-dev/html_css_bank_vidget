@@ -13,7 +13,7 @@ body{
 .card__wrapper{
     width: 751px;
     height: 600px;
-    border: 1px solid grey;
+    /*border: 1px solid grey;*/
     display:flex;
     position: relative;
 }
@@ -133,6 +133,21 @@ body{
     .card__front, .card__back{
         width:100%;
         height: 300px;
+    }
+
+    #card__number_inp, #card__month_inp, #card__year_inp, #card__back-cvv_inp{
+        height: 45px;
+    }
+}
+
+@media (max-width: 400px) {
+    .card__back{
+        left:0;
+    }
+
+    .card__front, .card__back{
+        width:100%;
+        height: 250px;
     }
 
     #card__number_inp, #card__month_inp, #card__year_inp, #card__back-cvv_inp{
